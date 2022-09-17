@@ -4,8 +4,8 @@ output: github_document
 date: "2022-09-17"
 ---
 
-#### Problem 1 ##
-## I use the following code to load the penguins dataset##
+Problem 1
+I use the following code to load the penguins dataset
 
 ```{r }
 data("penguins", package = "palmerpenguins")
@@ -17,10 +17,18 @@ ncol(penguins)
 mean(penguins$flipper_length_mm, na.rm = TRUE)
 ```
 
-## Make a scatterplot##
+Based on the R outcome,
+There are 8 variables(ncol),they are 
+"species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"and"year".
+Also,There are 344(nrow) individuals in this dataset.
+The mean flipper length of the dataset is 200.92.
+
+
+
+Make a scatterplot
 ```{r}
 library(ggplot2)
-ggplot(penguins,aes(x = bill_length_mm, y = flipper_length_mm,color=species))+ geom_point()
-ggsave("scatter_plot.pdf", height = 4, width = 6)
+ggplot(data=penguins,aes(x = bill_length_mm, y = flipper_length_mm,color=species))+ geom_point()
+ggsave("scatter_plot.pdf", height = 4, width = 5)
 ```
 
