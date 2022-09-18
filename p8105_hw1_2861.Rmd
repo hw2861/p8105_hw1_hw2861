@@ -19,10 +19,17 @@ mean(penguins$flipper_length_mm, na.rm = TRUE)
 
 Based on the R outcome,
 There are 8 variables(ncol),they are 
-"species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"and"year".
+"species",
+"island",
+"bill_length_mm",
+"bill_depth_mm",
+"flipper_length_mm",
+"body_mass_g",
+"sex"and"year".
+
+
 Also,There are 344(nrow) individuals in this dataset.
 The mean flipper length of the dataset is 200.92.
-
 
 
 Make a scatterplot
@@ -68,15 +75,30 @@ But the X3(character vector) and X4(factor vector) can Not be used to take the m
 
 
 ```{r}
+### convert logical vector into numeric vector
 pull(example_df,x2)
 x2_num = as.numeric(example_df$x2)
 mean(x2_num)
 
+### convert character vector into numeric vector
 pull(example_df,x3)
 x2_num = as.numeric(example_df$x3)
 mean(x3_num)
 
+### convert factor vector into numeric vector
 pull(example_df,x4)
 x2_num = as.numeric(example_df$x4)
 mean(x4_num)
 ```
+
+Based on the console,
+we can not convert character vector and factor vector into numeric vector.
+Because the elements in character and factor can not be treated like a certain number or value.
+
+Bue the logical vector can be converted into numeric value.
+Since the True or False can be converted into " 1 or 0"
+
+This helps me to explain what happens before when i try to take the mean.
+As long as this vector can be converted into numeric vector, 
+(The elements in the vector can be treated like numeric value)
+then we can calculate the mean value.
