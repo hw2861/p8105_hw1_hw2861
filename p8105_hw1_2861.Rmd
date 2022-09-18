@@ -65,3 +65,18 @@ mean_x4 = mean(pull(example_df,x4))
 
 The x1(a random sample) and x2(The logical vector) can be used to take the mean.
 But the X3(character vector) and X4(factor vector) can Not be used to take the mean.
+
+
+```{r}
+pull(example_df,x2)
+x2_num = as.numeric(example_df$x2)
+mean(x2_num)
+
+pull(example_df,x3)
+x2_num = as.numeric(example_df$x3)
+mean(x3_num)
+
+pull(example_df,x4)
+x2_num = as.numeric(example_df$x4)
+mean(x4_num)
+```
