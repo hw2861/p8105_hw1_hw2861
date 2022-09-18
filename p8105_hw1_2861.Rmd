@@ -42,7 +42,6 @@ x2 is the logical vector
 x3 is the character vector
 x4 is the factor vector
 
-
 ```{r}
 example_df = tibble(
 x1 = rnorm(10),
@@ -53,3 +52,13 @@ x4 = factor(c("Small", "Medium", "Small", "Small","Large", "Large", "Medium","La
 example_df
 ```
 
+
+We take the mean of the variables
+
+```{r}
+library(tidyverse)
+mean_x1 = mean(pull(example_df,x1))
+mean_x2 = mean(pull(example_df,x2))
+mean_x3 = mean(pull(example_df,x3))
+mean_x4 = mean(pull(example_df,x4))
+```
