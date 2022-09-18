@@ -37,6 +37,12 @@ ggsave("scatter_plot.pdf", height = 4, width = 5)
 
 Problem 2
 
+X1 is the random sample
+x2 is the logical vector
+x3 is the character vector
+x4 is the factor vector
+
+
 ```{r}
 example_df = tibble(
 x1 = rnorm(10),
@@ -46,3 +52,4 @@ x4 = factor(c("Small", "Medium", "Small", "Small","Large", "Large", "Medium","La
 )
 example_df
 ```
+
