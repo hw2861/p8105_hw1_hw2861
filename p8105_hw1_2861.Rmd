@@ -75,17 +75,15 @@ The x1(a random sample) and x2(The logical vector) can be used to take the mean.
 But the X3(character vector) and X4(factor vector) can Not be used to take the mean.
 
 
-```{r}
+```{r,eval=FALSE}
 ### convert logical vector into numeric vector
 pull(example_df,x2)
 x2_num = as.numeric(example_df$x2)
 mean(x2_num)
-
 ### convert character vector into numeric vector
 pull(example_df,x3)
 x2_num = as.numeric(example_df$x3)
 mean(x3_num)
-
 ### convert factor vector into numeric vector
 pull(example_df,x4)
 x2_num = as.numeric(example_df$x4)
@@ -103,3 +101,5 @@ This helps me to explain what happens before when i try to take the mean.
 As long as this vector can be converted into numeric vector, 
 (The elements in the vector can be treated like numeric value)
 then we can calculate the mean value.
+
+
