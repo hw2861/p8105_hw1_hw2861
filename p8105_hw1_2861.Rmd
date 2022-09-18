@@ -32,3 +32,17 @@ ggplot(data=penguins,aes(x = bill_length_mm, y = flipper_length_mm,color=species
 ggsave("scatter_plot.pdf", height = 4, width = 5)
 ```
 
+
+
+
+Problem 2
+
+```{r}
+example_df = tibble(
+x1 = rnorm(10),
+x2 = x1 > 0,
+x3= c("a","b","c","d","e","f","g","h","i","k"),
+x4 = factor(c("Small", "Medium", "Small", "Small","Large", "Large", "Medium","Large","Medium","Small"))
+)
+example_df
+```
