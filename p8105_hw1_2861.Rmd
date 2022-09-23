@@ -30,7 +30,7 @@ Again, by using "summary(penguins)", we can know the distribution of bill size a
 I also used "head(penguins)" because it is the recommended ways to show the dataset in the GitHub documentation.
 
 There are 344 rows and 8 cols in this dataset.
-So the size of the dataset is 2752.
+
 
 
 
