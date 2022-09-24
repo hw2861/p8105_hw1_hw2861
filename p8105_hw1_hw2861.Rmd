@@ -1,5 +1,6 @@
 ---
 title: "p8105_hw1_hw2861"
+author: "Hongmiao Wang"
 output: github_document
 date: "2022-09-17"
 ---
