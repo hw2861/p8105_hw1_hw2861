@@ -45,7 +45,8 @@ ggsave("scatter_plot.pdf", height = 4, width = 5)
 
 ##Problem 2
 
-X1 is the random samplex2 is the logical vector
+X1 is the random sample
+x2 is the logical vector
 x3 is the character vector
 x4 is the factor vector
 
