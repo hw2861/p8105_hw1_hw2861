@@ -84,11 +84,11 @@ x2_num = as.numeric(example_df$x2)
 mean(x2_num)
 ### convert character vector into numeric vector
 pull(example_df,x3)
-x2_num = as.numeric(example_df$x3)
+x3_num = as.numeric(example_df$x3)
 mean(x3_num)
 ### convert factor vector into numeric vector
 pull(example_df,x4)
-x2_num = as.numeric(example_df$x4)
+x4_num = as.numeric(example_df$x4)
 mean(x4_num)
 ```
 
