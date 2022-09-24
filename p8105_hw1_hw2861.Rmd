@@ -10,29 +10,29 @@ I use the following code to load the penguins dataset
 
 ```{r }
 data("penguins", package = "palmerpenguins")
+#Show the names of the variables
 names(penguins)
+#Display the dataset
 head(penguins)
+#Check the distribution of the variables
 summary(penguins)
+#Check the size of the dataset
 nrow(penguins)
 ncol(penguins)
+#Check the mean flipper length
 mean(penguins$flipper_length_mm, na.rm = TRUE)
 ```
 
-Discussion:
+
+
+The short description using inline R code:
 
 In Question1,I try to find the best way to display the penguins dataset.
-
-I use "names(penguins)",so we can know that there are 8 variables.
-They are "species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g" and"sex"and"year".
-Also, i use "summary(penguins)" to better estimate the distribution of these 8 variables.
+There are 8 variables in the dataset,they are `r names(penguins)`.
 From the important variables like "Species" or "Island",
-We learned that there are three species of penguins (Adelie,Chinstrap and Gentoo) in the dataset from the three islands(Biscoe,Dream and Torgersen).
-Again, by using "summary(penguins)", we can know the distribution of bill size and flipper length, and body mass of these penguins.The mean flipper length of the dataset is 200.92mm. The mean bill length is 43.92mm. And the mean bill depth is 17.15mm.
-I also used "head(penguins)" because it is the recommended ways to show the dataset in the GitHub documentation.
-
-There are 344 rows and 8 cols in this dataset.
-
-
+We learned that there are three species of penguins (Adelie,Chinstrap and Gentoo) in the dataset from the three islands(Biscoe,Dream and Torgersen).We can know the distribution of bill size and flipper length, and body mass of these penguins.The mean flipper length of the dataset is 200.92mm. The mean bill length is 43.92mm. And the mean bill depth is 17.15mm.
+There are `r nrow(penguins)` rows and `r ncol(penguins)` cols in this dataset.
+The mean flipper length is `r mean(penguins$flipper_length_mm, na.rm = TRUE)` 
 
 
 Make a scatterplot
