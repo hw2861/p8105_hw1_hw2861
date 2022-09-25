@@ -32,11 +32,12 @@ For the size of the datasize, There are `r nrow(penguins)` rows and `r ncol(peng
 Meaning that `r nrow(penguins)`  penguins were included in the dataset and for each penguin we had `r ncol(penguins)` study variables.
 The 8 variables in the Penguins dataset are `r names(penguins)`.
 From the important variables like "Species" or "Island",
-We learned that there are three species of penguins (Adelie,Chinstrap and Gentoo) in the dataset from the three islands(Biscoe,Dream and Torgersen).We can also know the distribution of bill Depth/Length and flipper length, body mass,the sex and the year of these penguins.
+We learned that there are three species of penguins (Adelie,Chinstrap and Gentoo) in the dataset from the three islands(Biscoe,Dream and Torgersen).We can also know the distribution of bill Depth/Length and flipper length, body mass,the sex of these penguins.
 We can use the mean value to estimate some important variables.
 The mean flipper length of the penguins is `r mean(penguins$flipper_length_mm, na.rm = TRUE)`mm. 
 The mean body mass is  `r mean(penguins$body_mass_g, na.rm = TRUE)`g.
 The mean bill length and bill depth are `r mean(penguins$bill_length_mm, na.rm = TRUE)`mm and `r mean(penguins$bill_depth_mm, na.rm = TRUE)`mm respectively.
+The data are collected from `r min(penguins$year, na.rm = TRUE)` to `r max(penguins$year, na.rm = TRUE)`.
 
 
 Make a scatterplot
